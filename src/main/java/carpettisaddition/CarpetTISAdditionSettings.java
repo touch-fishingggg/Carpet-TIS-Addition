@@ -23,6 +23,7 @@ import static carpet.settings.RuleCategory.*;
 public class CarpetTISAdditionSettings
 {
     public static final String TIS = "TIS";
+	public static final String TEN_ADDITION = "ten_addition";
     public static final String CARPET_MOD = "carpet_mod";  // _ cannot be replaced by space or you can't /carpet list this
 
 	private static final Translator translator = new Translator("rule");
@@ -784,6 +785,20 @@ public class CarpetTISAdditionSettings
 			return "You must choose a value from 0 to 128";
 		}
 	}
+
+	//	============== new features ====================
+
+	@Rule(
+			desc = "The spawn timer for the wandering trader",
+			extra = {
+					""
+			},
+			validate = ValidatePositive.class,
+			options = {"1", "20", "24000"},
+			strict = false,
+			category = {TEN_ADDITION}
+	)
+	public static int WanderingTraderSpawnTimer = 24000;
 
 	/*
 	 *   Declare rules above this

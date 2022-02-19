@@ -248,6 +248,7 @@
     "rule.turtleEggTrampledDisabled.StepAndDestroyBlockGoalMixin",
     "rule.turtleEggTrampledDisabled.TurtleEggBlockMixin",
     "rule.voidRelatedAltitude.EntityMixin",
+    "rule.WanderingTraderSpawnTimer.WanderingTraderManagerMixin",
     "rule.xpTrackingDistance.ExperienceOrbEntityMixin",
     "translations.HUDControllerMixin",
     "translations.LoggerMixin",
